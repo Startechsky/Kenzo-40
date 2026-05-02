@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import heroImage from './assets/kenzo/kenzo-woman.jpeg'
-import altImage from './assets/kenzo/kenzo-alt-hero.jpeg'
+import altImage from './assets/kenzo/kenzo-alt-hero.png'
 import cakeImage from './assets/kenzo/kenzo-family2.jpeg'
 import familyImage from './assets/kenzo/kenzo parents.jpeg'
 import memoryImage from './assets/kenzo/kenzo-phd.jpeg'
