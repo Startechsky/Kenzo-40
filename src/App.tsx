@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
 import heroImage from './assets/kenzo/kenzo-woman.jpeg'
+import altImage from './assets/kenzo/kenzo-alt-hero.jpeg'
 import cakeImage from './assets/kenzo/kenzo-family2.jpeg'
 import familyImage from './assets/kenzo/kenzo parents.jpeg'
 import memoryImage from './assets/kenzo/kenzo-phd.jpeg'
@@ -43,28 +44,28 @@ const memoryPhotos = [
   },
 ]
 
-const schedule = [
-  {
-    time: '2:00 PM',
-    title: 'Arrival & Welcome',
-    note: 'Guests settle in, connect, and ease into the orange and white celebration mood.',
-  },
-  {
-    time: '3:00 PM',
-    title: 'Tributes for Kenzo',
-    note: 'A window for warm words, laughter, and reflections on Solomon’s journey.',
-  },
-  {
-    time: '4:00 PM',
-    title: 'Cake, Photos & Cheers',
-    note: 'The big smile moment with cake, snapshots, and joyful birthday wishes.',
-  },
-  {
-    time: '5:00 PM',
-    title: 'Quiz & Celebration Flow',
-    note: 'Friends and family take the Kenzo challenge before the evening continues.',
-  },
-]
+// const schedule = [
+//   {
+//     time: '2:00 PM',
+//     title: 'Arrival & Welcome',
+//     note: 'Guests settle in, connect, and ease into the orange and white celebration mood.',
+//   },
+//   {
+//     time: '3:00 PM',
+//     title: 'Tributes for Kenzo',
+//     note: 'A window for warm words, laughter, and reflections on Solomon’s journey.',
+//   },
+//   {
+//     time: '4:00 PM',
+//     title: 'Cake, Photos & Cheers',
+//     note: 'The big smile moment with cake, snapshots, and joyful birthday wishes.',
+//   },
+//   {
+//     time: '5:00 PM',
+//     title: 'Quiz & Celebration Flow',
+//     note: 'Friends and family take the Kenzo challenge before the evening continues.',
+//   },
+// ]
 
 const storyChapters = [
   {
@@ -358,7 +359,7 @@ function App() {
 
           <div className="flex items-start justify-center lg:justify-end">
             <img
-              src={heroImage}
+              src={altImage}
               alt="Solomon Adekunle Adediran speaking during a gathering"
               className="h-[30rem] w-full max-w-[42rem] object-contain object-top sm:h-[38rem] lg:h-[46rem]"
             />
