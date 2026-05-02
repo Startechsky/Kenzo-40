@@ -1,5 +1,5 @@
-$page-bg: #fff8ef;
-$text-color: #1c1917;
+$page-bg: #fffaf5;
+$text-color: #7c2d12;
 $selection-color: rgba(251, 146, 60, 0.24);
 $font-body: 'Manrope', sans-serif;
 
@@ -38,4 +38,57 @@ a {
 
 ::selection {
   background: $selection-color;
+}
+
+.scroll-reveal,
+.reveal-item {
+  opacity: 0;
+  transform: translateY(34px);
+  transition:
+    opacity 760ms ease,
+    transform 760ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.scroll-reveal.is-visible,
+.reveal-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.wishes-carousel {
+  scrollbar-width: none;
+}
+
+.wishes-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.wish-card {
+  flex: 0 0 100%;
+  min-height: 18rem;
+}
+
+@media (min-width: 768px) {
+  .wish-card {
+    flex-basis: calc((100% - 1.25rem) / 2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .wish-card {
+    flex-basis: calc((100% - 2.5rem) / 3);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .scroll-reveal,
+  .reveal-item {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
